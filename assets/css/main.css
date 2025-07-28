@@ -492,7 +492,7 @@ h6 {
 
   .navmenu .listing-dropdown ul li a,
   .navmenu .listing-dropdown ul li:hover > a {
-    padding: 10px 10px;
+    padding: 10px 0px;
     font-size: 15px;
     color: var(--nav-dropdown-color);
     background-color: var(--nav-dropdown-background-color);
