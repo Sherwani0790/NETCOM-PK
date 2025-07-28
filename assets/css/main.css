@@ -88,9 +88,8 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
-.dp-flex{
+.dp-flex {
   display: flex;
-
 }
 /* PHP Email Form Messages
 ------------------------------*/
@@ -470,9 +469,9 @@ h6 {
     position: static;
   }
 
-  .navmenu .listing-dropdown ul {
+  .navmenu .listing-dropdown .mega-menu {
     margin: 0;
-    padding: 10px;
+    padding: 24px;
     background: var(--nav-dropdown-background-color);
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     position: absolute;
@@ -481,7 +480,7 @@ h6 {
     right: 0;
     visibility: hidden;
     opacity: 0;
-    display: flex;
+    /* display: flex; */
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
@@ -493,7 +492,7 @@ h6 {
 
   .navmenu .listing-dropdown ul li a,
   .navmenu .listing-dropdown ul li:hover > a {
-    padding: 10px 20px;
+    padding: 10px 10px;
     font-size: 15px;
     color: var(--nav-dropdown-color);
     background-color: var(--nav-dropdown-background-color);
@@ -506,7 +505,7 @@ h6 {
     background-color: var(--nav-dropdown-background-color);
   }
 
-  .navmenu .listing-dropdown:hover > ul {
+  .navmenu .listing-dropdown:hover > .mega-menu {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -515,7 +514,7 @@ h6 {
 
 /* Listing Dropdown - Mobile */
 @media (max-width: 1199px) {
-  .navmenu .listing-dropdown ul {
+  .navmenu .listing-dropdown .mega-menu {
     position: static;
     display: none;
     z-index: 99;
@@ -708,7 +707,7 @@ h6 {
 }
 .custom-accordian .accordion {
   background-color: transparent;
-   color: color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   cursor: pointer;
   width: 100%;
   border: none;
@@ -722,7 +721,7 @@ h6 {
 }
 
 .custom-accordian .accordion.active {
-  color:  color-mix(in srgb, var(--default-color), transparent 20%);
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
 }
 
 .custom-accordian .panel {
@@ -743,7 +742,7 @@ h6 {
 }
 
 .custom-accordian .panel ul li a {
-  color: color-mix(in srgb, var(--default-color), transparent 20%);;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
   font-size: 16px;
   font-weight: 400;
   line-height: 27px;
