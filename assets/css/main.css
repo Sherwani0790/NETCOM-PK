@@ -529,7 +529,7 @@ h6 {
     position: static;
   }
 
-  .navmenu .listing-dropdown .mega-menu ul{
+  .navmenu .listing-dropdown .mega-menu ul {
     display: block;
   }
   .navmenu .listing-dropdown .mega-menu {
@@ -593,9 +593,9 @@ h6 {
   .navmenu .listing-dropdown ul ul {
     background-color: rgba(33, 37, 41, 0.1);
   }
-.navmenu .listing-dropdown > .dropdown-active ul{
-  display: contents;
-}
+  .navmenu .listing-dropdown > .dropdown-active ul {
+    display: contents;
+  }
   .navmenu .listing-dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
@@ -1906,6 +1906,8 @@ section,
 .clients .swiper-slide img {
   transition: 0.3s;
   opacity: 0.5;
+  width: 100px;
+  /* filter: grayscale(100); */
 }
 
 .clients .swiper-slide img:hover {
