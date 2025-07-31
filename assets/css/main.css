@@ -1933,7 +1933,12 @@ section,
 .clients .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
-
+.partnerships-section .selected-img-atom {
+  width: 60px;
+}
+.partnerships-section .selected-img {
+  width: 100px;
+}
 /*--------------------------------------------------------------
 # Recent Posts Section
 --------------------------------------------------------------*/
@@ -2292,7 +2297,10 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
-.default-button {
+.default-button,
+.default-button:hover,
+.default-button:focus {
+  color: var(--default-color);
   color: var(--contrast-color);
   background: var(--accent-color);
   font-family: var(--heading-font);
@@ -2307,6 +2315,8 @@ section,
   transition: 0.5s;
   box-shadow: 0 8px 28px rgba(0, 0, 0, 0.1);
   border: 0;
+  width: max-content;
+  cursor: pointer;
 }
 /*--------------------------------------------------------------
 # Starter Section Section
