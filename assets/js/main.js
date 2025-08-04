@@ -254,3 +254,62 @@ accordions.forEach((accordion) => {
     }
   });
 });
+
+ document.addEventListener("DOMContentLoaded", function () {
+const carousel = document.getElementById("carouselExample");
+const progressItems = document.querySelectorAll(".progress-item");
+const progressBars = document.querySelectorAll(".progress-bar");
+const slideInterval = 8000;
+let currentSlide = 0;
+let slideTimer;
+const bsCarousel = new bootstrap.Carousel(carousel, {
+  interval: slideInterval,
+  pause: false,
+});
+
+function startProgressBar(index) {
+  progressBars.forEach((bar) => {
+	bar.style.width = "0";
+	bar.style.animation = "none";
+  });
+
+  progressItems.forEach((item) => item.classList.remove("active"));
+
+  progressItems[index].classList.add("active");
+
+  const currentBar = progressBars[index];
+  currentBar.style.animation = "none";
+  void currentBar.offsetWidth;
+  currentBar.style.animation = `progressAnimation ${
+	slideInterval / 1000
+  }s linear`;
+}
+
+function goToSlide(index) {
+  bsCarousel.to(index);
+}
+carousel.addEventListener("slide.bs.carousel", function (event) {
+  currentSlide = event.to;
+  startProgressBar(currentSlide);
+});
+
+progressItems.forEach((item, index) => {
+  item.addEventListener("click", function () {
+	goToSlide(index);
+  });
+});
+
+startProgressBar(0);
+
+progressBars.forEach((bar, index) => {
+  bar.addEventListener("animationend", function () {
+	const nextSlide = (index + 1) % progressItems.length;
+	setTimeout(() => {
+	  goToSlide(nextSlide);
+	}, 100);
+  });
+});
+ });
+
+
+
