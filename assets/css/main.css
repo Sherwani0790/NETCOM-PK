@@ -1995,9 +1995,9 @@ section,
   border-top: 2px solid rgba(255, 255, 255, 0.2);
 }
 
-.vedio_tag_class_active {
+/* .vedio_tag_class_active {
   background-color: #000;
-}
+} */
 
 .video_tag_class {
   height: 102vh;
