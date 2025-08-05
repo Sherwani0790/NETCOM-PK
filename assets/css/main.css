@@ -2166,3 +2166,8 @@ section,
     padding: 20px;
   }
 }
+
+.drop-down-img img {
+  height: 500px;
+  width: 100%;
+}
